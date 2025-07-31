@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taynara & Thiago - 22 de Novembro 2025</title>
+    <meta name="description" content="Taynara & Thiago - 22 de Novembro de 2025. Confirme sua presença e celebre conosco!">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 20px 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            padding: 15px 0;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .nav-content a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 25px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            font-size: 15px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .nav-content a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background: linear-gradient(135deg, #a8727d, #d4a574);
+            transition: all 0.3s;
+            transform: translateX(-50%);
+        }
+
+        .nav-content a:hover::after {
+            width: 100%;
+        }
+
+        .nav-content a:hover {
+            color: #a8727d;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, 
+                rgba(168, 114, 125, 0.7) 0%, 
+                rgba(212, 165, 116, 0.6) 50%, 
+                rgba(168, 218, 220, 0.5) 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect fill="%23f8f6f3" width="1000" height="600"/><circle fill="%23e8d5d7" cx="200" cy="150" r="80" opacity="0.3"/><circle fill="%23d4a574" cx="800" cy="100" r="120" opacity="0.2"/><circle fill="%23a8dadc" cx="150" cy="450" r="100" opacity="0.25"/><circle fill="%23c4969a" cx="700" cy="500" r="90" opacity="0.3"/><circle fill="%23b8c5d1" cx="500" cy="250" r="60" opacity="0.2"/></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-content .date {
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        .hero-content .location {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.1rem;
+            margin-top: 25px;
+            opacity: 0.8;
+            font-style: italic;
+            animation: fadeInUp 1s ease 0.9s both;
+        }
+
+        /* Countdown */
+        .countdown {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 25px;
+            animation: fadeInUp 1s ease 1.2s both;
+        }
+
+        .countdown-item {
+            text-align: center;
+            background: rgba(255,255,255,0.15);
+            padding: 25px 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            min-width: 90px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s;
+        }
+
+        .countdown-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: 300;
+            display: block;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .countdown-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        .section {
+            padding: 120px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 70px;
+            color: #333;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(135deg, #a8727d, #d4a574);
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* Event Details */
+        .event-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+
+        .event-card {
+            text-align: center;
+            padding: 50px 40px;
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(168, 114, 125, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(135deg, #a8727d, #d4a574);
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(168, 114, 125, 0.15);
+        }
+
+        .event-card .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .event-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 25px;
+            color: #a8727d;
+        }
+
+        .event-card p {
+            margin-bottom: 12px;
+            color: #666;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .event-card .time {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            margin-top: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Dress Code */
+        .dress-code {
+            background: linear-gradient(135deg, rgba(168, 114, 125, 0.05), rgba(212, 165, 116, 0.05));
+            padding: 50px;
+            border-radius: 20px;
+            margin: 80px 0;
+            text-align: center;
+            border: 1px solid rgba(168, 114, 125, 0.1);
+        }
+
+        .dress-code h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #a8727d;
+            margin-bottom: 25px;
+        }
+
+        .dress-code p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .dress-code .highlight {
+            color: #a8727d;
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Maps */
+        .maps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 50px;
+            margin-top: 70px;
+        }
+
+        .map-item {
+            text-align: center;
+        }
+
+        .map-item h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: #a8727d;
+        }
+
+        .map {
+            width: 100%;
+            height: 320px;
+            border-radius: 15px;
+            border: none;
+            filter: grayscale(0.2);
+            transition: filter 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .map:hover {
+            filter: grayscale(0);
+        }
+
+        /* RSVP Section */
+        .rsvp-section {
+            background: linear-gradient(135deg, #a8727d 0%, #d4a574 100%);
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rsvp-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle fill="rgba(255,255,255,0.05)" cx="20" cy="20" r="15"/><circle fill="rgba(255,255,255,0.03)" cx="80" cy="60" r="20"/><circle fill="rgba(255,255,255,0.04)" cx="60" cy="90" r="10"/></svg>');
+        }
+
+        .rsvp-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .rsvp-section h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .rsvp-section h2::after {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .rsvp-section p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 45px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            background: rgba(255,255,255,0.95);
+            color: #a8727d;
+            padding: 20px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+            font-size: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background: white;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Gifts Section */
+        .gifts-section {
+            padding: 120px 0;
+            background: #fafafa;
+        }
+
+        .gifts-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .gifts-intro {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 60px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .gifts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 70px;
+        }
+
+        .gift-card {
+            padding: 45px 35px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(168, 114, 125, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gift-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(135deg, #a8727d, #d4a574);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .gift-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .gift-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(168, 114, 125, 0.15);
+        }
+
+        .gift-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .gift-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: #a8727d;
+            margin-bottom: 20px;
+        }
+
+        .gift-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .contact-info {
+            margin-top: 60px;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            border: 1px solid rgba(168, 114, 125, 0.1);
+        }
+
+        .contact-info h3 {
+            font-family: 'Playfair Display', serif;
+            color: #a8727d;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .contact-info p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Message Section */
+        .message-section {
+            background: linear-gradient(135deg, #333 0%, #4a4a4a 100%);
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .message-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .message-section h2 {
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .message-section h2::after {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .message-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-top: 50px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+                letter-spacing: 2px;
+            }
+
+            .hero-content .date {
+                font-size: 1.3rem;
+            }
+
+            .countdown {
+                flex-wrap: wrap;
+                bottom: 40px;
+                gap: 15px;
+            }
+
+            .countdown-item {
+                min-width: 70px;
+                padding: 20px 15px;
+            }
+
+            .nav-content a {
+                margin: 0 15px;
+                font-size: 14px;
+            }
+
+            .section h2 {
+                font-size: 2.4rem;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+
+            .event-details,
+            .maps-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .dress-code {
+                padding: 35px 25px;
+            }
+
+            .gifts-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        /* Scroll smooth */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Parallax effect */
+        .hero {
+            background-attachment: fixed;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#home">Início</a>
+            <a href="#detalhes">Detalhes</a>
+            <a href="#presentes">Presentes</a>
+            <a href="#confirmacao">RSVP</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Taynara & Thiago</h1>
+            <div class="date">22 de Novembro de 2025</div>
+            <div class="location">Maringá, Paraná</div>
+            <div class="subtitle">"Duas almas, um só coração"</div>
+        </div>
+        
+        <div class="countdown" id="countdown">
+            <div class="countdown-item">
+                <span class="countdown-number" id="days">000</span>
+                <span class="countdown-label">Dias</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="hours">00</span>
+                <span class="countdown-label">Horas</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="countdown-label">Minutos</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="seconds">00</span>
+                <span class="countdown-label">Segundos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhes do Evento -->
+    <section class="section" id="detalhes">
+        <h2>Nosso Grande Dia</h2>
+        
+        <div class="event-details">
+            <div class="event-card">
+                <div class="icon">⛪</div>
+                <h3>Cerimônia Religiosa</h3>
+                <p><strong>Paróquia Cristo Ressuscitado</strong></p>
+                <p>R. Francisco Glicério, 1244<br>Zona 05, Maringá - PR</p>
+                <div class="time">16h00</div>
+            </div>
+            
+            <div class="event-card">
+                <div class="icon">🎉</div>
+                <h3>Festa & Recepção</h3>
+                <p><strong>Casa Blanca Hall</strong></p>
+                <p>Av. São Judas Tadeu, 591<br>Jardim Copacabana, Maringá - PR</p>
+                <div class="time">18h00</div>
+            </div>
+        </div>
+
+        <!-- Dress Code -->
+        <div class="dress-code">
+            <h3>Dress Code</h3>
+            <p><strong>Traje:</strong> Passeio Completo</p>
+            <p>Homens: Terno | Mulheres: Vestido elegante</p>
+            <p class="highlight">Evitar tons de branco, off-white e muito claros</p>
+        </div>
+
+        <!-- Mapas -->
+        <div class="maps-container">
+            <div class="map-item">
+                <h4>⛪ Igreja</h4>
+                <iframe class="map" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.8542856847434!2d-51.96087908536107!3d-23.428211517950747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd718bc5ea7e5%3A0xd37f3c9cd278ab12!2zUGFyw7NxdWlhIENyaXN0byBSZXNzdXNjaXRhZG8!5e0!3m2!1spt-BR!2sbr!4v1641234567890"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+                <a href="https://www.google.com/maps/place/Par%C3%B3quia+Cristo+Ressuscitado/@-23.4282115,-51.9608791,17z/data=!3m1!4b1!4m6!3m5!1s0x94ecd718bc5ea7e5:0xd37f3c9cd278ab12!8m2!3d-23.4282115!4d-51.9583042!16s%2Fg%2F1tslkwsl?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" 
+                   style="display: inline-block; margin-top: 15px; color: #a8727d; text-decoration: none; font-weight: 500;">
+                    📍 Ver no Google Maps
+                </a>
+            </div>
+            <div class="map-item">
+                <h4>🎉 Recepção</h4>
+                <iframe class="map" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5267989147087!2d-51.94200348536056!3d-23.393634918038686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd6b4f5bad353%3A0x63b4647046dc5e6a!2sCasa%20Blanca%20Hall!5e0!3m2!1spt-BR!2sbr!4v1641234567891"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+                <a href="https://www.google.com/maps/place/Casa+Blanca+Hall/@-23.393635,-51.9420035,17z/data=!3m1!4b1!4m6!3m5!1s0x94ecd6b4f5bad353:0x63b4647046dc5e6a!8m2!3d-23.393635!4d-51.9394286!16s%2Fg%2F11cssqp91x?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" 
+                   style="display: inline-block; margin-top: 15px; color: #a8727d; text-decoration: none; font-weight: 500;">
+                    📍 Ver no Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp-section" id="confirmacao">
+        <div class="rsvp-content">
+            <h2>Confirmação de Presença</h2>
+            <p>Sua presença é fundamental para tornar nosso dia ainda mais especial. Por favor, confirme até <strong>22 de Outubro de 2025</strong>.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSflE_Hs0RAqInOHUcjlNB8923-Bi59HQH5JwRDlaclcZOO0bQ/viewform" target="_blank" class="btn">
+                Confirmar Presença
+            </a>
+        </div>
+    </section>
+
+    <!-- Presentes -->
+    <section class="section gifts-section" id="presentes">
+        <div class="gifts-content">
+            <h2>Lista de Presentes</h2>
+            <div class="gifts-intro">
+                Sua presença é o maior presente que poderíamos receber. Se desejarem nos presentear, ficaremos muito gratos com qualquer gesto de carinho.
+            </div>
+
+            <!-- Presentes em Dinheiro -->
+            <div style="margin: 60px 0; padding: 50px; background: white; border-radius: 20px; border: 1px solid rgba(168, 114, 125, 0.1);">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #a8727d; text-align: center; margin-bottom: 30px;">
+                    💝 Presente em Dinheiro
+                </h3>
+                <div style="text-align: center; color: #666; margin-bottom: 30px; font-size: 1.1rem; line-height: 1.7;">
+                    <p style="margin-bottom: 20px;">Sua presença já é o maior presente! Mas se quiserem nos presentear com uma contribuição em dinheiro, ficaremos muito gratos. ❤️</p>
+                    <p style="margin-bottom: 25px; font-weight: 500;">Escolha o valor que estiver no seu coração:</p>
+                    <div style="background: linear-gradient(135deg, #a8727d, #d4a574); color: white; padding: 25px; border-radius: 12px; margin: 20px auto; max-width: 400px;">
+                        <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 15px; word-break: break-all;">
+                            **[SUA_CHAVE_PIX]**
+                        </div>
+                    </div>
+                    <div style="font-size: 1rem; color: #666; line-height: 1.6;">
+                        <p style="margin: 8px 0;">✅ PIX: Transferência instantânea e gratuita</p>
+                        <p style="margin: 8px 0;">✅ Disponível 24h por dia</p>
+                        <p style="margin: 8px 0;">✅ Qualquer valor é bem-vindo com muito carinho</p>
+                    </div>
+                </div>
+
+                <!-- Dúvidas ou Informações -->
+                <div style="text-align: center; padding: 30px; background: #fafafa; border-radius: 15px;">
+                    <h4 style="font-family: 'Playfair Display', serif; color: #a8727d; margin-bottom: 15px; font-size: 1.4rem;">
+                        📞 Dúvidas ou Informações
+                    </h4>
+                    <p style="color: #666; margin-bottom: 20px;">
+                        Entre em contato conosco para qualquer dúvida sobre presentes!
+                    </p>
+                    <a href="https://wa.me/5544991780597?text=Olá! Gostaria de mais informações sobre os presentes de casamento." 
+                       target="_blank" 
+                       style="
+                        display: inline-block;
+                        background: #25D366;
+                        color: white;
+                        padding: 15px 30px;
+                        border-radius: 25px;
+                        text-decoration: none;
+                        font-weight: 500;
+                        transition: all 0.3s ease;
+                       " onmouseover="this.style.background='#128C7E'" onmouseout="this.style.background='#25D366'">
+                        📱 WhatsApp: (44) 99178-0597
+                    </a>
+                </div>
+            </div>
+            
+            <div class="gifts-grid">
+                <div class="gift-card">
+                    <div class="icon">🤵💬</div>
+                    <h4>Dar palpite sobre o casamento</h4>
+                    <p>Porque todo mundo tem uma opinião "valiosa" sobre como deveria ser!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 150</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💍🎤</div>
+                    <h4>Fazer um pedido de casamento durante a festa</h4>
+                    <p>Aproveite nossa festa para roubar a cena (com nossa permissão!)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 500</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍽️🏠</div>
+                    <h4>Primeiro almoço na casa dos noivos</h4>
+                    <p>Venha testar se a Taynara realmente sabe cozinhar!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">👥🚫</div>
+                    <h4>Levar alguém que não foi convidado</h4>
+                    <p>Porque sempre tem aquele amigo que "não tinha o que fazer"</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💐🙅‍♂️</div>
+                    <h4>Não jogar o buquê para sua mulher</h4>
+                    <p>Para os casados que querem continuar casados só uma vez</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍖⚡</div>
+                    <h4>Prioridade na fila do buffet</h4>
+                    <p>Seja o primeiro a descobrir se o churrasco está bom!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 100</div>
+                </div>
+                <div class="gift-card">
+                    <div class="icon">💐🎯</div>
+                    <h4>Jogar o buquê na sua direção</h4>
+                    <p>Mira certeira garantida! (Não garantimos que você vai pegar)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍯⚡</div>
+                    <h4>Vale glicose para a festa</h4>
+                    <p>Para aguentar firme até o último forró!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 120</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍰📍</div>
+                    <h4>Sentar próximo à mesa de doces</h4>
+                    <p>Localização privilegiada para os gulosos de plantão</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏝️👥</div>
+                    <h4>Ir junto para a lua de mel</h4>
+                    <p>Porque três é demais, mas quatro já é uma festa!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 2.000</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🧺📍</div>
+                    <h4>Cesto de roupa suja com GPS</h4>
+                    <p>Para não deixar roupas no chão e acabar com a paz conjugal</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 350</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🕶️😴</div>
+                    <h4>Óculos escuros anti-olheiras</h4>
+                    <p>Para disfarçar a ressaca moral do dia seguinte</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">❤️🛠️</div>
+                    <h4>Kit "me senti tocado a ajudar"</h4>
+                    <p>Para quando bater aquela vontade de ser útil nos noivos</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💰🏦</div>
+                    <h4>2 dias para planejar assalto sem o Professor</h4>
+                    <p>La Casa de Papel versão amadora (crime não compensa!)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 800</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🛡️👸</div>
+                    <h4>Cobertor para noiva sempre coberta de razão</h4>
+                    <p>Porque "eu avisei" nunca sai de moda</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏝️☀️</div>
+                    <h4>Banho de sol nas Ilhas Maldivas</h4>
+                    <p>Para quando o quintal de casa não for suficiente</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.500</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">👶💰</div>
+                    <h4>Vaquinha para programar o(a) neto(a)</h4>
+                    <p>Porque os vovôs ansiosos já estão se organizando</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎮🕐</div>
+                    <h4>1 hora livre de video game para o noivo</h4>
+                    <p>Sem reclamações, perguntas ou "já não foi muito?"</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 100</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🛒🏃‍♀️</div>
+                    <h4>Personal shopper para supermercado</h4>
+                    <p>Para nunca mais esquecer o que foi comprar</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 400</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">📱🔇</div>
+                    <h4>Modo silencioso eterno para sogra</h4>
+                    <p>Para aqueles conselhos que ninguém pediu</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 600</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍕📞</div>
+                    <h4>Delivery grátis por 1 ano</h4>
+                    <p>Para os dias que ninguém quer cozinhar (que são muitos)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 800</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🧙‍♂️✨</div>
+                    <h4>Mágico para fazer a louça desaparecer</h4>
+                    <p>O truque de mágica mais pedido pelos casais</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 500</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏆😴</div>
+                    <h4>Troféu "Campeão de dormir no sofá"</h4>
+                    <p>Para quando a cama vira território inimigo</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 150</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎯🤝</div>
+                    <h4>Aulas de "sempre ter razão" para o noivo</h4>
+                    <p>Curso intensivo (mas provavelmente sem sucesso)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 350</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🔊📢</div>
+                    <h4>Megafone para discussões conjugais</h4>
+                    <p>Para os vizinhos acompanharem o reality show</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💸🎰</div>
+                    <h4>Seguro contra gastos femininos</h4>
+                    <p>"Mas eu não comprei nada" - cobertura total</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.000</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎭😇</div>
+                    <h4>Curso de teatro "Eu não fiz nada"</h4>
+                    <p>Para aqueles momentos de inocência duvidosa</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏠🔍</div>
+                    <h4>GPS para achar coisas em casa</h4>
+                    <p>"Onde você guardou?" versão tecnológica</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">☕⏰</div>
+                    <h4>Cafeteira que liga sozinha às 6h</h4>
+                    <p>Para sobreviver aos primeiros anos de casados</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 400</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎪🏠</div>
+                    <h4>Circo particular para visitas dos sogros</h4>
+                    <p>Entretenimento garantido para toda família!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏆👑</div>
+                    <h4>Coroa de "Rainha da Casa"</h4>
+                    <p>Para oficializar o que já sabemos</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
+                </div>>
+                
+                <div class="gift-card">
+                    <div class="icon">👥🚫</div>
+                    <h4>Levar alguém que não foi convidado</h4>
+                    <p>Porque sempre tem aquele amigo que "não tinha o que fazer"</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💐🙅‍♂️</div>
+                    <h4>Não jogar o buquê para sua mulher</h4>
+                    <p>Para os casados que querem continuar casados só uma vez</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍖⚡</div>
+                    <h4>Prioridade na fila do buffet</h4>
+                    <p>Seja o primeiro a descobrir se o churrasco está bom!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 100</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💐🎯</div>
+                    <h4>Jogar o buquê na sua direção</h4>
+                    <p>Mira certeira garantida! (Não garantimos que você vai pegar)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍯⚡</div>
+                    <h4>Vale glicose para a festa</h4>
+                    <p>Para aguentar firme até o último forró!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 120</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍰📍</div>
+                    <h4>Sentar próximo à mesa de doces</h4>
+                    <p>Localização privilegiada para os gulosos de plantão</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏝️👥</div>
+                    <h4>Ir junto para a lua de mel</h4>
+                    <p>Porque três é demais, mas quatro já é uma festa!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 2.000</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🧺📍</div>
+                    <h4>Cesto de roupa suja com GPS</h4>
+                    <p>Para não deixar roupas no chão e acabar com a paz conjugal</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 350</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🕶️😴</div>
+                    <h4>Óculos escuros anti-olheiras</h4>
+                    <p>Para disfarçar a ressaca moral do dia seguinte</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">❤️🛠️</div>
+                    <h4>Kit "me senti tocado a ajudar"</h4>
+                    <p>Para quando bater aquela vontade de ser útil nos noivos</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💰🏦</div>
+                    <h4>2 dias para planejar assalto sem o Professor</h4>
+                    <p>La Casa de Papel versão amadora (crime não compensa!)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 800</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🛡️👸</div>
+                    <h4>Cobertor para noiva sempre coberta de razão</h4>
+                    <p>Porque "eu avisei" nunca sai de moda</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏝️☀️</div>
+                    <h4>Banho de sol nas Ilhas Maldivas</h4>
+                    <p>Para quando o quintal de casa não for suficiente</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.500</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">👶💰</div>
+                    <h4>Vaquinha para programar o(a) neto(a)</h4>
+                    <p>Porque os vovôs ansiosos já estão se organizando</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎮🕐</div>
+                    <h4>1 hora livre de video game para o noivo</h4>
+                    <p>Sem reclamações, perguntas ou "já não foi muito?"</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 100</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🛒🏃‍♀️</div>
+                    <h4>Personal shopper para supermercado</h4>
+                    <p>Para nunca mais esquecer o que foi comprar</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 400</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">📱🔇</div>
+                    <h4>Modo silencioso eterno para sogra</h4>
+                    <p>Para aqueles conselhos que ninguém pediu</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 600</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍕📞</div>
+                    <h4>Delivery grátis por 1 ano</h4>
+                    <p>Para os dias que ninguém quer cozinhar (que são muitos)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 800</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🧙‍♂️✨</div>
+                    <h4>Mágico para fazer a louça desaparecer</h4>
+                    <p>O truque de mágica mais pedido pelos casais</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 500</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏆😴</div>
+                    <h4>Troféu "Campeão de dormir no sofá"</h4>
+                    <p>Para quando a cama vira território inimigo</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 150</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎯🤝</div>
+                    <h4>Aulas de "sempre ter razão" para o noivo</h4>
+                    <p>Curso intensivo (mas provavelmente sem sucesso)</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 350</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🔊📢</div>
+                    <h4>Megafone para discussões conjugais</h4>
+                    <p>Para os vizinhos acompanharem o reality show</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💸🎰</div>
+                    <h4>Seguro contra gastos femininos</h4>
+                    <p>"Mas eu não comprei nada" - cobertura total</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.000</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎭😇</div>
+                    <h4>Curso de teatro "Eu não fiz nada"</h4>
+                    <p>Para aqueles momentos de inocência duvidosa</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏠🔍</div>
+                    <h4>GPS para achar coisas em casa</h4>
+                    <p>"Onde você guardou?" versão tecnológica</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">☕⏰</div>
+                    <h4>Cafeteira que liga sozinha às 6h</h4>
+                    <p>Para sobreviver aos primeiros anos de casados</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 400</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎪🏠</div>
+                    <h4>Circo particular para visitas dos sogros</h4>
+                    <p>Entretenimento garantido para toda família!</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.200</div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏆👑</div>
+                    <h4>Coroa de "Rainha da Casa"</h4>
+                    <p>Para oficializar o que já sabemos</p>
+                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
+                </div> bom!</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💐🎯</div>
+                    <h4>Jogar o buquê na sua direção</h4>
+                    <p>Mira certeira garantida! (Não garantimos que você vai pegar)</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍯⚡</div>
+                    <h4>Vale glicose para a festa</h4>
+                    <p>Para aguentar firme até o último forró!</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍰📍</div>
+                    <h4>Sentar próximo à mesa de doces</h4>
+                    <p>Localização privilegiada para os gulosos de plantão</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏝️👥</div>
+                    <h4>Ir junto para a lua de mel</h4>
+                    <p>Porque três é demais, mas quatro já é uma festa!</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🧺📍</div>
+                    <h4>Cesto de roupa suja com GPS</h4>
+                    <p>Para não deixar roupas no chão e acabar com a paz conjugal</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🕶️😴</div>
+                    <h4>Óculos escuros anti-olheiras</h4>
+                    <p>Para disfarçar a ressaca moral do dia seguinte</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">❤️🛠️</div>
+                    <h4>Kit "me senti tocado a ajudar"</h4>
+                    <p>Para quando bater aquela vontade de ser útil nos noivos</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💰🏦</div>
+                    <h4>2 dias para planejar assalto sem o Professor</h4>
+                    <p>La Casa de Papel versão amadora (crime não compensa!)</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🛡️👸</div>
+                    <h4>Cobertor para noiva sempre coberta de razão</h4>
+                    <p>Porque "eu avisei" nunca sai de moda</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏝️☀️</div>
+                    <h4>Banho de sol nas Ilhas Maldivas</h4>
+                    <p>Para quando o quintal de casa não for suficiente</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">👶💰</div>
+                    <h4>Vaquinha para programar o(a) neto(a)</h4>
+                    <p>Porque os vovôs ansiosos já estão se organizando</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎮🕐</div>
+                    <h4>1 hora livre de video game para o noivo</h4>
+                    <p>Sem reclamações, perguntas ou "já não foi muito?"</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🛒🏃‍♀️</div>
+                    <h4>Personal shopper para supermercado</h4>
+                    <p>Para nunca mais esquecer o que foi comprar</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">📱🔇</div>
+                    <h4>Modo silencioso eterno para sogra</h4>
+                    <p>Para aqueles conselhos que ninguém pediu</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🍕📞</div>
+                    <h4>Delivery grátis por 1 ano</h4>
+                    <p>Para os dias que ninguém quer cozinhar (que são muitos)</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🧙‍♂️✨</div>
+                    <h4>Mágico para fazer a louça desaparecer</h4>
+                    <p>O truque de mágica mais pedido pelos casais</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏆😴</div>
+                    <h4>Troféu "Campeão de dormir no sofá"</h4>
+                    <p>Para quando a cama vira território inimigo</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎯🤝</div>
+                    <h4>Aulas de "sempre ter razão" para o noivo</h4>
+                    <p>Curso intensivo (mas provavelmente sem sucesso)</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🔊📢</div>
+                    <h4>Megafone para discussões conjugais</h4>
+                    <p>Para os vizinhos acompanharem o reality show</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💸🎰</div>
+                    <h4>Seguro contra gastos femininos</h4>
+                    <p>"Mas eu não comprei nada" - cobertura total</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎭😇</div>
+                    <h4>Curso de teatro "Eu não fiz nada"</h4>
+                    <p>Para aqueles momentos de inocência duvidosa</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏠🔍</div>
+                    <h4>GPS para achar coisas em casa</h4>
+                    <p>"Onde você guardou?" versão tecnológica</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">☕⏰</div>
+                    <h4>Cafeteira que liga sozinha às 6h</h4>
+                    <p>Para sobreviver aos primeiros anos de casados</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎪🏠</div>
+                    <h4>Circo particular para visitas dos sogros</h4>
+                    <p>Entretenimento garantido para toda família!</p>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏆👑</div>
+                    <h4>Coroa de "Rainha da Casa"</h4>
+                    <p>Para oficializar o que já sabemos</p>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Para Mais Informações</h3>
+                <p>Entre em contato conosco para mais detalhes sobre presentes:<br>
+                <a href="https://wa.me/5544991780597?text=Olá! Gostaria de mais informações sobre os presentes de casamento." 
+                   target="_blank" 
+                   style="color: #a8727d; text-decoration: none; font-weight: 600;">
+                    <strong>📱 WhatsApp: (44) 99178-0597</strong>
+                </a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensagem dos Noivos -->
+    <section class="message-section">
+        <div class="message-content">
+            <h2>Uma Mensagem Especial</h2>
+            <div class="message-text">
+                <p>Queridos familiares e amigos,</p>
+                <p>É com muito amor e alegria que convidamos vocês para celebrar conosco o início de nossa jornada como família. Cada um de vocês tem um lugar especial em nossos corações e em nossa história.</p>
+                <p>Esperamos contar com a presença e o carinho de todos neste dia tão especial. Será uma honra compartilhar este momento único com pessoas tão queridas.</p>
+            </div>
+            <div class="signature">Com amor, Taynara & Thiago</div>
+        </div>
+    </section>
+
+    <script>
+        // Contador regressivo
+        function updateCountdown() {
+            const weddingDate = new Date('2025-11-22T16:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days.toString().padStart(3, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<h2 style="color: white; font-family: Playfair Display;">É hoje! 🎉</h2>';
+            }
