@@ -132,6 +132,7 @@
         .hero-content .subtitle {
             font-size: 1.1rem;
             margin-top: 25px;
+            margin-bottom: 50px;
             opacity: 0.8;
             font-style: italic;
             animation: fadeInUp 1s ease 0.9s both;
@@ -139,12 +140,9 @@
 
         /* Countdown */
         .countdown {
-            position: absolute;
-            bottom: 60px;
-            left: 50%;
-            transform: translateX(-50%);
             display: flex;
             gap: 25px;
+            justify-content: center;
             animation: fadeInUp 1s ease 1.2s both;
         }
 
@@ -566,8 +564,8 @@
 
             .countdown {
                 flex-wrap: wrap;
-                bottom: 40px;
                 gap: 15px;
+                margin-top: 30px;
             }
 
             .countdown-item {
@@ -628,7 +626,7 @@
             <a href="#home">Início</a>
             <a href="#detalhes">Detalhes</a>
             <a href="#presentes">Presentes</a>
-            <a href="#confirmacao">RSVP</a>
+            <a href="#confirmacao">Confirmação</a>
         </div>
     </nav>
 
@@ -639,24 +637,24 @@
             <div class="date">22 de Novembro de 2025</div>
             <div class="location">Maringá, Paraná</div>
             <div class="subtitle">"Duas almas, um só coração"</div>
-        </div>
-        
-        <div class="countdown" id="countdown">
-            <div class="countdown-item">
-                <span class="countdown-number" id="days">000</span>
-                <span class="countdown-label">Dias</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-number" id="hours">00</span>
-                <span class="countdown-label">Horas</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-number" id="minutes">00</span>
-                <span class="countdown-label">Minutos</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-number" id="seconds">00</span>
-                <span class="countdown-label">Segundos</span>
+            
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">000</span>
+                    <span class="countdown-label">Dias</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
             </div>
         </div>
     </section>
@@ -686,7 +684,6 @@
         <!-- Dress Code -->
         <div class="dress-code">
             <h3>Dress Code</h3>
-            <p><strong>Traje:</strong> Passeio Completo</p>
             <p>Homens: Terno | Mulheres: Vestido elegante</p>
             <p class="highlight">Evitar tons de branco, off-white e muito claros</p>
         </div>
@@ -826,201 +823,6 @@
                     <p>Seja o primeiro a descobrir se o churrasco está bom!</p>
                     <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 100</div>
                 </div>
-                <div class="gift-card">
-                    <div class="icon">💐🎯</div>
-                    <h4>Jogar o buquê na sua direção</h4>
-                    <p>Mira certeira garantida! (Não garantimos que você vai pegar)</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍯⚡</div>
-                    <h4>Vale glicose para a festa</h4>
-                    <p>Para aguentar firme até o último forró!</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 120</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍰📍</div>
-                    <h4>Sentar próximo à mesa de doces</h4>
-                    <p>Localização privilegiada para os gulosos de plantão</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 200</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏝️👥</div>
-                    <h4>Ir junto para a lua de mel</h4>
-                    <p>Porque três é demais, mas quatro já é uma festa!</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 2.000</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🧺📍</div>
-                    <h4>Cesto de roupa suja com GPS</h4>
-                    <p>Para não deixar roupas no chão e acabar com a paz conjugal</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 350</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🕶️😴</div>
-                    <h4>Óculos escuros anti-olheiras</h4>
-                    <p>Para disfarçar a ressaca moral do dia seguinte</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">❤️🛠️</div>
-                    <h4>Kit "me senti tocado a ajudar"</h4>
-                    <p>Para quando bater aquela vontade de ser útil nos noivos</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💰🏦</div>
-                    <h4>2 dias para planejar assalto sem o Professor</h4>
-                    <p>La Casa de Papel versão amadora (crime não compensa!)</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 800</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🛡️👸</div>
-                    <h4>Cobertor para noiva sempre coberta de razão</h4>
-                    <p>Porque "eu avisei" nunca sai de moda</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏝️☀️</div>
-                    <h4>Banho de sol nas Ilhas Maldivas</h4>
-                    <p>Para quando o quintal de casa não for suficiente</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.500</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">👶💰</div>
-                    <h4>Vaquinha para programar o(a) neto(a)</h4>
-                    <p>Porque os vovôs ansiosos já estão se organizando</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.200</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎮🕐</div>
-                    <h4>1 hora livre de video game para o noivo</h4>
-                    <p>Sem reclamações, perguntas ou "já não foi muito?"</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 100</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🛒🏃‍♀️</div>
-                    <h4>Personal shopper para supermercado</h4>
-                    <p>Para nunca mais esquecer o que foi comprar</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 400</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">📱🔇</div>
-                    <h4>Modo silencioso eterno para sogra</h4>
-                    <p>Para aqueles conselhos que ninguém pediu</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 600</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍕📞</div>
-                    <h4>Delivery grátis por 1 ano</h4>
-                    <p>Para os dias que ninguém quer cozinhar (que são muitos)</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 800</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🧙‍♂️✨</div>
-                    <h4>Mágico para fazer a louça desaparecer</h4>
-                    <p>O truque de mágica mais pedido pelos casais</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 500</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏆😴</div>
-                    <h4>Troféu "Campeão de dormir no sofá"</h4>
-                    <p>Para quando a cama vira território inimigo</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 150</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎯🤝</div>
-                    <h4>Aulas de "sempre ter razão" para o noivo</h4>
-                    <p>Curso intensivo (mas provavelmente sem sucesso)</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 350</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🔊📢</div>
-                    <h4>Megafone para discussões conjugais</h4>
-                    <p>Para os vizinhos acompanharem o reality show</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 200</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💸🎰</div>
-                    <h4>Seguro contra gastos femininos</h4>
-                    <p>"Mas eu não comprei nada" - cobertura total</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.000</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎭😇</div>
-                    <h4>Curso de teatro "Eu não fiz nada"</h4>
-                    <p>Para aqueles momentos de inocência duvidosa</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏠🔍</div>
-                    <h4>GPS para achar coisas em casa</h4>
-                    <p>"Onde você guardou?" versão tecnológica</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">☕⏰</div>
-                    <h4>Cafeteira que liga sozinha às 6h</h4>
-                    <p>Para sobreviver aos primeiros anos de casados</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 400</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎪🏠</div>
-                    <h4>Circo particular para visitas dos sogros</h4>
-                    <p>Entretenimento garantido para toda família!</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 1.200</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏆👑</div>
-                    <h4>Coroa de "Rainha da Casa"</h4>
-                    <p>Para oficializar o que já sabemos</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
-                </div>>
-                
-                <div class="gift-card">
-                    <div class="icon">👥🚫</div>
-                    <h4>Levar alguém que não foi convidado</h4>
-                    <p>Porque sempre tem aquele amigo que "não tinha o que fazer"</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 300</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💐🙅‍♂️</div>
-                    <h4>Não jogar o buquê para sua mulher</h4>
-                    <p>Para os casados que querem continuar casados só uma vez</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 250</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍖⚡</div>
-                    <h4>Prioridade na fila do buffet</h4>
-                    <p>Seja o primeiro a descobrir se o churrasco está bom!</p>
-                    <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 100</div>
-                </div>
                 
                 <div class="gift-card">
                     <div class="icon">💐🎯</div>
@@ -1195,157 +997,6 @@
                     <h4>Coroa de "Rainha da Casa"</h4>
                     <p>Para oficializar o que já sabemos</p>
                     <div style="margin-top: 15px; color: #a8727d; font-weight: 600;">R$ 180</div>
-                </div> bom!</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💐🎯</div>
-                    <h4>Jogar o buquê na sua direção</h4>
-                    <p>Mira certeira garantida! (Não garantimos que você vai pegar)</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍯⚡</div>
-                    <h4>Vale glicose para a festa</h4>
-                    <p>Para aguentar firme até o último forró!</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍰📍</div>
-                    <h4>Sentar próximo à mesa de doces</h4>
-                    <p>Localização privilegiada para os gulosos de plantão</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏝️👥</div>
-                    <h4>Ir junto para a lua de mel</h4>
-                    <p>Porque três é demais, mas quatro já é uma festa!</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🧺📍</div>
-                    <h4>Cesto de roupa suja com GPS</h4>
-                    <p>Para não deixar roupas no chão e acabar com a paz conjugal</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🕶️😴</div>
-                    <h4>Óculos escuros anti-olheiras</h4>
-                    <p>Para disfarçar a ressaca moral do dia seguinte</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">❤️🛠️</div>
-                    <h4>Kit "me senti tocado a ajudar"</h4>
-                    <p>Para quando bater aquela vontade de ser útil nos noivos</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💰🏦</div>
-                    <h4>2 dias para planejar assalto sem o Professor</h4>
-                    <p>La Casa de Papel versão amadora (crime não compensa!)</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🛡️👸</div>
-                    <h4>Cobertor para noiva sempre coberta de razão</h4>
-                    <p>Porque "eu avisei" nunca sai de moda</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏝️☀️</div>
-                    <h4>Banho de sol nas Ilhas Maldivas</h4>
-                    <p>Para quando o quintal de casa não for suficiente</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">👶💰</div>
-                    <h4>Vaquinha para programar o(a) neto(a)</h4>
-                    <p>Porque os vovôs ansiosos já estão se organizando</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎮🕐</div>
-                    <h4>1 hora livre de video game para o noivo</h4>
-                    <p>Sem reclamações, perguntas ou "já não foi muito?"</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🛒🏃‍♀️</div>
-                    <h4>Personal shopper para supermercado</h4>
-                    <p>Para nunca mais esquecer o que foi comprar</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">📱🔇</div>
-                    <h4>Modo silencioso eterno para sogra</h4>
-                    <p>Para aqueles conselhos que ninguém pediu</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍕📞</div>
-                    <h4>Delivery grátis por 1 ano</h4>
-                    <p>Para os dias que ninguém quer cozinhar (que são muitos)</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🧙‍♂️✨</div>
-                    <h4>Mágico para fazer a louça desaparecer</h4>
-                    <p>O truque de mágica mais pedido pelos casais</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏆😴</div>
-                    <h4>Troféu "Campeão de dormir no sofá"</h4>
-                    <p>Para quando a cama vira território inimigo</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎯🤝</div>
-                    <h4>Aulas de "sempre ter razão" para o noivo</h4>
-                    <p>Curso intensivo (mas provavelmente sem sucesso)</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🔊📢</div>
-                    <h4>Megafone para discussões conjugais</h4>
-                    <p>Para os vizinhos acompanharem o reality show</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💸🎰</div>
-                    <h4>Seguro contra gastos femininos</h4>
-                    <p>"Mas eu não comprei nada" - cobertura total</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎭😇</div>
-                    <h4>Curso de teatro "Eu não fiz nada"</h4>
-                    <p>Para aqueles momentos de inocência duvidosa</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏠🔍</div>
-                    <h4>GPS para achar coisas em casa</h4>
-                    <p>"Onde você guardou?" versão tecnológica</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">☕⏰</div>
-                    <h4>Cafeteira que liga sozinha às 6h</h4>
-                    <p>Para sobreviver aos primeiros anos de casados</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎪🏠</div>
-                    <h4>Circo particular para visitas dos sogros</h4>
-                    <p>Entretenimento garantido para toda família!</p>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏆👑</div>
-                    <h4>Coroa de "Rainha da Casa"</h4>
-                    <p>Para oficializar o que já sabemos</p>
                 </div>
             </div>
             
@@ -1394,3 +1045,21 @@
             if (distance < 0) {
                 document.getElementById('countdown').innerHTML = '<h2 style="color: white; font-family: Playfair Display;">É hoje! 🎉</h2>';
             }
+        }
+
+        // Chama a função imediatamente e depois a cada segundo
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Efeito scroll na navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
