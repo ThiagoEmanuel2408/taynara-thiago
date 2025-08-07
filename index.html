@@ -491,12 +491,31 @@
             transform: translateY(-2px);
         }
 
-        /* Gifts Grid */
+        .gift-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #DAA520, #B8860B);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .gift-btn:hover {
+            background: linear-gradient(135deg, #B8860B, #DAA520);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(218, 165, 32, 0.3);
+            color: white;
+        }
+
         .gifts-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin-top: 70px;
+            margin: 70px 0;
         }
 
         .gift-card {
@@ -542,21 +561,25 @@
             margin-bottom: 15px;
         }
 
-        .gift-card p {
-            color: #666;
-            line-height: 1.6;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-        }
-
-        .gift-price {
-            color: #DAA520;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
         .contact-info {
             margin-top: 60px;
+            padding: 50px;
+            background: white;
+            border: 1px solid rgba(218, 165, 32, 0.1);
+        }
+
+        .contact-info h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: #DAA520;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .contact-info p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
             padding: 50px;
             background: white;
             border: 1px solid rgba(218, 165, 32, 0.1);
@@ -675,13 +698,13 @@
                 padding: 40px 30px;
             }
 
+            .pix-section {
+                padding: 30px 20px;
+            }
+
             .gifts-grid {
                 grid-template-columns: 1fr;
                 gap: 25px;
-            }
-
-            .pix-section {
-                padding: 30px 20px;
             }
         }
 
@@ -841,220 +864,138 @@
             
             <div class="gifts-grid">
                 <div class="gift-card">
-                    <div class="icon">🤵💬</div>
-                    <h4>Dar palpite sobre o casamento</h4>
-                    <p>Porque todo mundo tem uma opinião "valiosa" sobre como deveria ser!</p>
-                    <div class="gift-price">R$ 150</div>
+                    <div class="icon">💵</div>
+                    <h4>Ajuda para os noivos comprarem dólares para viagem</h4>
+                    <p>Para que a lua de mel seja em moeda forte!</p>
+                    <a href="https://mpago.la/1L2ssSq" target="_blank" class="gift-btn">
+                        💰 R$ 1.999,00 - Presentear
+                    </a>
                 </div>
                 
                 <div class="gift-card">
-                    <div class="icon">💍🎤</div>
-                    <h4>Fazer um pedido de casamento durante a festa</h4>
-                    <p>Aproveite nossa festa para roubar a cena (com nossa permissão!)</p>
-                    <div class="gift-price">R$ 500</div>
+                    <div class="icon">👶</div>
+                    <h4>Cota para perguntar quando o casal terá filhos</h4>
+                    <p>Direito vitalício de fazer a pergunta clássica</p>
+                    <a href="https://mpago.la/1TWfVs2" target="_blank" class="gift-btn">
+                        💰 R$ 659,80 - Presentear
+                    </a>
                 </div>
                 
                 <div class="gift-card">
-                    <div class="icon">🍽️🏠</div>
+                    <div class="icon">🍽️</div>
                     <h4>Primeiro almoço na casa dos noivos</h4>
                     <p>Venha testar se a Taynara realmente sabe cozinhar!</p>
-                    <div class="gift-price">R$ 200</div>
+                    <a href="https://mpago.la/2J1iX9e" target="_blank" class="gift-btn">
+                        💰 R$ 299,00 - Presentear
+                    </a>
                 </div>
                 
                 <div class="gift-card">
-                    <div class="icon">👥🚫</div>
-                    <h4>Levar alguém que não foi convidado</h4>
-                    <p>Porque sempre tem aquele amigo que "não tinha o que fazer"</p>
-                    <div class="gift-price">R$ 300</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💐🙅‍♂️</div>
-                    <h4>Não jogar o buquê para sua mulher</h4>
-                    <p>Para os casados que querem continuar casados só uma vez</p>
-                    <div class="gift-price">R$ 250</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍖⚡</div>
-                    <h4>Prioridade na fila do buffet</h4>
-                    <p>Seja o primeiro a descobrir se o churrasco está bom!</p>
-                    <div class="gift-price">R$ 100</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💐🎯</div>
-                    <h4>Jogar o buquê na sua direção</h4>
-                    <p>Mira certeira garantida! (Não garantimos que você vai pegar)</p>
-                    <div class="gift-price">R$ 180</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍯⚡</div>
-                    <h4>Vale glicose para a festa</h4>
-                    <p>Para aguentar firme até o último forró!</p>
-                    <div class="gift-price">R$ 120</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍰📍</div>
-                    <h4>Sentar próximo à mesa de doces</h4>
-                    <p>Localização privilegiada para os gulosos de plantão</p>
-                    <div class="gift-price">R$ 200</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏝️👥</div>
-                    <h4>Ir junto para a lua de mel</h4>
-                    <p>Porque três é demais, mas quatro já é uma festa!</p>
-                    <div class="gift-price">R$ 2.000</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🧺📍</div>
-                    <h4>Cesto de roupa suja com GPS</h4>
-                    <p>Para não deixar roupas no chão e acabar com a paz conjugal</p>
-                    <div class="gift-price">R$ 350</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🕶️😴</div>
-                    <h4>Óculos escuros anti-olheiras</h4>
-                    <p>Para disfarçar a ressaca moral do dia seguinte</p>
-                    <div class="gift-price">R$ 180</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">❤️🛠️</div>
-                    <h4>Kit "me senti tocado a ajudar"</h4>
-                    <p>Para quando bater aquela vontade de ser útil nos noivos</p>
-                    <div class="gift-price">R$ 250</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💰🏦</div>
-                    <h4>2 dias para planejar assalto sem o Professor</h4>
-                    <p>La Casa de Papel versão amadora (crime não compensa!)</p>
-                    <div class="gift-price">R$ 800</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🛡️👸</div>
+                    <div class="icon">🛡️</div>
                     <h4>Cobertor para noiva sempre coberta de razão</h4>
                     <p>Porque "eu avisei" nunca sai de moda</p>
-                    <div class="gift-price">R$ 300</div>
+                    <a href="https://mpago.la/1y5MPzC" target="_blank" class="gift-btn">
+                        💰 R$ 699,90 - Presentear
+                    </a>
                 </div>
                 
                 <div class="gift-card">
-                    <div class="icon">🏝️☀️</div>
-                    <h4>Banho de sol nas Ilhas Maldivas</h4>
-                    <p>Para quando o quintal de casa não for suficiente</p>
-                    <div class="gift-price">R$ 1.500</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">👶💰</div>
-                    <h4>Vaquinha para programar o(a) neto(a)</h4>
-                    <p>Porque os vovôs ansiosos já estão se organizando</p>
-                    <div class="gift-price">R$ 1.200</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎮🕐</div>
-                    <h4>1 hora livre de video game para o noivo</h4>
-                    <p>Sem reclamações, perguntas ou "já não foi muito?"</p>
-                    <div class="gift-price">R$ 100</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🛒🏃‍♀️</div>
-                    <h4>Personal shopper para supermercado</h4>
-                    <p>Para nunca mais esquecer o que foi comprar</p>
-                    <div class="gift-price">R$ 400</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">📱🔇</div>
-                    <h4>Modo silencioso eterno para sogra</h4>
-                    <p>Para aqueles conselhos que ninguém pediu</p>
-                    <div class="gift-price">R$ 600</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🍕📞</div>
-                    <h4>Delivery grátis por 1 ano</h4>
-                    <p>Para os dias que ninguém quer cozinhar (que são muitos)</p>
-                    <div class="gift-price">R$ 800</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🧙‍♂️✨</div>
-                    <h4>Mágico para fazer a louça desaparecer</h4>
-                    <p>O truque de mágica mais pedido pelos casais</p>
-                    <div class="gift-price">R$ 500</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏆😴</div>
-                    <h4>Troféu "Campeão de dormir no sofá"</h4>
-                    <p>Para quando a cama vira território inimigo</p>
-                    <div class="gift-price">R$ 150</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🎯🤝</div>
-                    <h4>Aulas de "sempre ter razão" para o noivo</h4>
-                    <p>Curso intensivo (mas provavelmente sem sucesso)</p>
-                    <div class="gift-price">R$ 350</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🔊📢</div>
-                    <h4>Megafone para discussões conjugais</h4>
-                    <p>Para os vizinhos acompanharem o reality show</p>
-                    <div class="gift-price">R$ 200</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">💸🎰</div>
+                    <div class="icon">💸</div>
                     <h4>Seguro contra gastos femininos</h4>
                     <p>"Mas eu não comprei nada" - cobertura total</p>
-                    <div class="gift-price">R$ 1.000</div>
+                    <a href="https://mpago.la/1kyQTr6" target="_blank" class="gift-btn">
+                        💰 R$ 1.299,00 - Presentear
+                    </a>
                 </div>
                 
                 <div class="gift-card">
-                    <div class="icon">🎭😇</div>
-                    <h4>Curso de teatro "Eu não fiz nada"</h4>
-                    <p>Para aqueles momentos de inocência duvidosa</p>
-                    <div class="gift-price">R$ 300</div>
-                </div>
-                
-                <div class="gift-card">
-                    <div class="icon">🏠🔍</div>
-                    <h4>GPS para achar coisas em casa</h4>
+                    <div class="icon">🧭</div>
+                    <h4>GPS para a noiva achar as coisas em casa</h4>
                     <p>"Onde você guardou?" versão tecnológica</p>
-                    <div class="gift-price">R$ 250</div>
+                    <a href="https://mpago.la/1y5MPzC" target="_blank" class="gift-btn">
+                        💰 R$ 759,00 - Presentear
+                    </a>
                 </div>
                 
                 <div class="gift-card">
-                    <div class="icon">☕⏰</div>
-                    <h4>Cafeteira que liga sozinha às 6h</h4>
-                    <p>Para sobreviver aos primeiros anos de casados</p>
-                    <div class="gift-price">R$ 400</div>
+                    <div class="icon">🤵</div>
+                    <h4>Dar palpite sobre o casamento</h4>
+                    <p>Porque todo mundo tem uma opinião "valiosa" sobre como deveria ser!</p>
+                    <a href="https://mpago.la/2jQVRqa" target="_blank" class="gift-btn">
+                        💰 R$ 1.499,89 - Presentear
+                    </a>
                 </div>
                 
                 <div class="gift-card">
-                    <div class="icon">🎪🏠</div>
-                    <h4>Circo particular para visitas dos sogros</h4>
-                    <p>Entretenimento garantido para toda família!</p>
-                    <div class="gift-price">R$ 1.200</div>
+                    <div class="icon">🏝️</div>
+                    <h4>Ir junto para lua de mel</h4>
+                    <p>Porque três é demais, mas quatro já é uma festa!</p>
+                    <a href="https://mpago.la/31hSpqe" target="_blank" class="gift-btn">
+                        💰 R$ 999,79 - Presentear
+                    </a>
                 </div>
                 
                 <div class="gift-card">
-                    <div class="icon">🏆👑</div>
-                    <h4>Coroa de "Rainha da Casa"</h4>
-                    <p>Para oficializar o que já sabemos</p>
-                    <div class="gift-price">R$ 180</div>
+                    <div class="icon">❤️</div>
+                    <h4>Kit "me senti tocado a ajudar os noivos"</h4>
+                    <p>Para quando bater aquela vontade de ser útil</p>
+                    <a href="https://mpago.la/33GFx3u" target="_blank" class="gift-btn">
+                        💰 R$ 498,90 - Presentear
+                    </a>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🏦</div>
+                    <h4>Cofrinho fundo emergencial para TPM</h4>
+                    <p>Reserva de emergência para dias difíceis</p>
+                    <a href="https://mpago.la/2rro65J" target="_blank" class="gift-btn">
+                        💰 R$ 379,00 - Presentear
+                    </a>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">📚</div>
+                    <h4>Livro fictício "Como sobreviver ao primeiro mês de casado"</h4>
+                    <p>Manual de sobrevivência matrimonial premium</p>
+                    <a href="https://mpago.la/2NbsECQ" target="_blank" class="gift-btn">
+                        💰 R$ 4.889,99 - Presentear
+                    </a>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">🎉</div>
+                    <h4>Patrocine a despedida dos noivos</h4>
+                    <p>Última festa como solteiros com tudo pago</p>
+                    <a href="https://mpago.la/2jPQUDK" target="_blank" class="gift-btn">
+                        💰 R$ 1.678,69 - Presentear
+                    </a>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">⛑️</div>
+                    <h4>Capacete contra o rolo de macarrão para o noivo</h4>
+                    <p>Proteção básica para discussões culinárias</p>
+                    <a href="https://mpago.la/2xmDuNd" target="_blank" class="gift-btn">
+                        💰 R$ 549,87 - Presentear
+                    </a>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">💰</div>
+                    <h4>Eu não vou embora "ajuda extra para pagar os fornecedores"</h4>
+                    <p>Para que tudo saia perfeito sem perrengue</p>
+                    <a href="https://mpago.la/2imPvrw" target="_blank" class="gift-btn">
+                        💰 R$ 2.479,99 - Presentear
+                    </a>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="icon">📄</div>
+                    <h4>Adote um boleto atrasado</h4>
+                    <p>Seja padrinho de uma conta em atraso</p>
+                    <a href="https://mpago.la/2rro65J" target="_blank" class="gift-btn">
+                        💰 R$ 399,90 - Presentear
+                    </a>
                 </div>
             </div>
             
